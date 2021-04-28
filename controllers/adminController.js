@@ -21,7 +21,7 @@ exports.login_post = function (req, res, next) {
 			console.log(user);
 			// generate a signed son web token with the contents of user object and return it in the response
 			let opts = {
-				// expiresIn: 60 * 120
+				expiresIn: 60 * 60 * 4
 			}
 			console.log(process.env.JWT_SECRET);
 			const token = jwt.sign( { id: user._id }, process.env.JWT_SECRET, opts);
