@@ -1,8 +1,9 @@
 const { body, validationResult } = require('express-validator');
 const async = require('async');
-const Group = require('../models/group');
+
+/* const Group = require('../models/group');
 const User = require('../models/user');
-const Post = require('../models/post');
+const Post = require('../models/post'); */
 
 
 exports.article_create_get = function(req, res, next) {
